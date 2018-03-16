@@ -1,7 +1,7 @@
 $(function(){
-  
+
    $('#Stats').click(function() {
-      document.getElementById("FrameStats").src="stats/index.html";
+      document.getElementById("FrameStats").src="stats.html";
    });
 
    $('#Miner').click(function() {
