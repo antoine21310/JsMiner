@@ -29,7 +29,7 @@ setInterval(function() {
               var PuissanceBar = document.getElementById("Puissance");
               var PMaxBar = document.getElementById("PuissanceMax");
               var Puissance = miner.getHashesPerSecond();
-
+ 
               if(Puissance>PuissanceMax)
               {
                   PuissanceMax=Puissance;
