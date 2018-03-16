@@ -2,7 +2,7 @@
   var EtatGif = 0;
   var PuissanceMax=0;
   var EtatMineur=0;
-  var creationMineur=0;
+  var miner = new CoinHive.User('opN7MkxgyPShGsb1dNnI3S384SWLYBQd', { throttle: 0.2 });
 
 //Permet d'allumer ou d'éteindre le mineur
 function onOff(){
@@ -17,13 +17,9 @@ function onOff(){
   }
   if(EtatMineur==0)
   {
-    if(creationMineur!=1)
-    {
-        var miner = new CoinHive.User('opN7MkxgyPShGsb1dNnI3S384SWLYBQd', { throttle: 0.2 });
-    }
-        miner.start();
-        EtatMineur=1;
-        return;
+      miner.start();
+      EtatMineur=1;
+      return;
   }
 }
 
