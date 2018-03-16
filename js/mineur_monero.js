@@ -2,6 +2,7 @@
   var EtatGif = 0;
   var PuissanceMax=0;
   var EtatMineur=0;
+  var creationMineur=0;
 
 //Permet d'allumer ou d'éteindre le mineur
 function onOff(){
@@ -12,12 +13,17 @@ function onOff(){
       EtatMineur=0;
       EtatGif=0;
       document.getElementById("img").src="img/gifstat.gif";
+      return;
   }
   if(EtatMineur==0)
   {
+    if(creationMineur!=1)
+    {
         var miner = new CoinHive.User('opN7MkxgyPShGsb1dNnI3S384SWLYBQd', { throttle: 0.2 });
+    }
         miner.start();
         EtatMineur=1;
+        return;
   }
 }
 
@@ -29,7 +35,7 @@ setInterval(function() {
               var PuissanceBar = document.getElementById("Puissance");
               var PMaxBar = document.getElementById("PuissanceMax");
               var Puissance = miner.getHashesPerSecond();
- 
+
               if(Puissance>PuissanceMax)
               {
                   PuissanceMax=Puissance;
