@@ -3,7 +3,7 @@
     <head>
 
       <meta charset="utf-8" />
-      <link rel='stylesheet' type='text/css' href='' >
+      <link rel='stylesheet' type='text/css' href='index.css' >
 
       <title>Mineur</title>
 
@@ -11,7 +11,16 @@
 
     <body>
 
-    tes sur le miner
+      <div id="HashesParSecondes">Puissance&nbsp;de&nbsp;calcul&nbsp;:&nbsp;</div>
+      <div id="PuissanceBarMax"><div id="Puissance"><div id="PuissanceMax">&nbsp;&nbsp;Puissance</div></div></div>
+      <div id="PMax">Puissance&nbsp;Max&nbsp;:&nbsp;</div>
+
+      <center><img id="img" height="160px" width="160px" src="img/gifstat.gif"></center>
+      <center><button class="bouton" id="pause" onclick="onOff()">Pause / Reprendre</button></center>
+
+    <script src="library/jquery3.2.1.js"></script>
+    <script src="library/coinhive.min.js"></script>
+    <script src="js/mineur_monero.js"></script>
 
     </body>
 
