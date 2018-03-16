@@ -9,3 +9,8 @@ $(function(){
    });
 
 });
+
+function miner(){
+
+  console.log("coucou");
+}
