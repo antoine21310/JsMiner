@@ -1,0 +1,17 @@
+body{
+    background-color:   #ebf5fb  ;
+    font-size:17px;
+}
+#puissance {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+    border-radius:0px;
+    border-style:solid;
+    border-top-width:0px;
+    border-left-width:0px;
+    border-bottom-width:0px;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+
+}
