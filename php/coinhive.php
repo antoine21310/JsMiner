@@ -8,14 +8,14 @@ class CoinHiveAPI {
 		}
 		$this->secret = $secret;
 	}
-  
+
 	function get($path, $data = []) {
 		$data['secret'] = $this->secret;
 		$url = self::API_URL.$path.'?'.http_build_query($data);
 		$response = file_get_contents($url);
 		return json_decode($response);
 	}
-	
+
 	function post($path, $data = []) {
 		$data['secret'] = $this->secret;
 		$context = stream_context_create([
@@ -28,7 +28,7 @@ class CoinHiveAPI {
 		$url = SELF::API_URL.$path;
 		$response = file_get_contents($url, false, $context);
 		return json_decode($response);
-	}	
+	}
 }
 
 
@@ -37,8 +37,11 @@ $coinhive = new CoinHiveAPI('QtatExA3diaJBbAEPOdIx7GrQt3FUJIB');
 
 // Make a simple get request without additional parameters
 $stats = $coinhive->get('/stats/site');
+$payout = $coinhive->get('/stats/payout');
+
 echo $stats->hashesTotal;
+echo $payout->payoutPer1MHashes;
 
 
 
-?> 
+?>
