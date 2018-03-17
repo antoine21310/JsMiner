@@ -36,12 +36,14 @@ class CoinHiveAPI {
 $coinhive = new CoinHiveAPI('QtatExA3diaJBbAEPOdIx7GrQt3FUJIB');
 
 // Make a simple get request without additional parameters
-$stats = $coinhive->get('/stats/site');
+$hashes = $coinhive->get('/stats/site');
 $payout = $coinhive->get('/stats/payout');
 
-echo $stats->hashesTotal;
-echo $payout->payoutPer1MHashes;
-
+$stats = array();
+$stats["hashes"] = $hashes->hashesTotal;
+$stats["payout"] = $payout->payoutPer1MHashes;
+$stats["xmrToUsd"] = $payout->xmrToUsd;
+echo json_encode($stats);
 
 
 ?>
