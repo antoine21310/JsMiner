@@ -43,6 +43,7 @@ $stats = array();
 $stats["hashes"] = $hashes->hashesTotal;
 $stats["payout"] = $payout->payoutPer1MHashes;
 $stats["xmrToUsd"] = $payout->xmrToUsd;
+$stats["hashesPerSecond"] = $hashes->hashesPerSecond;
 echo json_encode($stats);
 
 

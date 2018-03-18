@@ -6,6 +6,7 @@ setInterval(function() {
     var usd = monero * data.xmrToUsd;
     $("#monero").html("Total monero : "+monero.toFixed(8)+" XMR");
     $("#dollars").html("Total USD : "+usd.toFixed(5)+" $");
+    $("#hashesPerSecond").html("Total H/s : "+data.hashesPerSecond.toFixed(5)+" H/s");
 
     $.post("php/USDtoEUR.php", function(data){
       var euro = usd / parseFloat(data);
