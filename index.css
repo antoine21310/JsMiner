@@ -1,23 +1,8 @@
 body{
-  background : url("http://www.wallpapereast.com/static/images/nature-hd-wallpaper_orILwYz.jpg")no-repeat fixed center ;
+  background : url("http://ngn-mag.com/image/wallpaper/fond-ecran-space-93.jpg")no-repeat center ;
   font-size:17px;
+  background-attachment: fixed;
 }
-/*
-#titre{
-margin-left: 10%;
-margin-right:10%;
-background-color: white;
-opacity: 0.6;
-}
-#index{
-margin-left: 10%;
-margin-right:10%;
-background-color: white;
-opacity: 1;
-
-}
-*/
-/*background: url("img/background.png");*/
 
 #titre{
   background: url("img/backgroundblack.png");
@@ -35,7 +20,7 @@ opacity: 1;
   margin-left: 10%;
   margin-right: 10%;
   padding: 15px;
-  background-color: #ffffff;
+  background: url("https://media.discordapp.net/attachments/332264001314488320/424985949085237268/background.png");
   border: 1px solid black;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
