@@ -15,7 +15,7 @@ setInterval(function() {
     //affiche le monero, le dollars et la puissance dans la page stats
     $("#monero").html("Total monero : "+monero.toFixed(8)+" XMR");
     $("#dollars").html("Total USD : "+usd.toFixed(5)+" $");
-    $("#hashesPerSecond").html("Total H/s : "+data.hashesPerSecond.toFixed(5)+" H/s");
+    $("#hashesPerSecond").html("Total H/s : "+data.hashesPerSecond.toFixed(1)+" H/s");
 
     // affiche l'euros dans la page stats
     $.post("php/USDtoEUR.php", function(data){

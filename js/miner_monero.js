@@ -36,7 +36,7 @@ setInterval(function() {
     {
         PuissanceMax=Puissance;
     }
-    
+
     document.getElementById('HashesParSecondes').innerHTML='Puissance de calcul : '+ Puissance.toFixed(1)+'h/s';
     document.getElementById("PMax").innerHTML='Puissance Max : '+PuissanceMax.toFixed(1)+'h/s';
 
