@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
 
-      <meta charset="utf-8" />
-      <link rel='stylesheet' type='text/css' href='index.css' >
+  <meta charset="utf-8" />
+  <link rel='stylesheet' type='text/css' href='index.css' >
 
-      <title>Stats</title>
+  <title>Stats</title>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!--nombre total de monero miné-->
-        <div id="monero">Total&nbsp;monero&nbsp;:&nbsp;</div>
-        <!--équivalent en dollards-->
-        <div id="dollars">Total&nbsp;USD&nbsp;:&nbsp;</div>
-        <!--équivalent en euros-->
-        <div id="euro">Total&nbsp;euros&nbsp;:&nbsp;</div>
+  <!--nombre total de monero miné-->
+  <div id="monero">Total&nbsp;monero&nbsp;:&nbsp;</div>
+  <!--équivalent en dollards-->
+  <div id="dollars">Total&nbsp;USD&nbsp;:&nbsp;</div>
+  <!--équivalent en euros-->
+  <div id="euro">Total&nbsp;euros&nbsp;:&nbsp;</div>
+  <hr/>
+  <!--puissance total minée en temps réel par tout les appareils -->
+  <div id="hashesPerSecond">Total&nbsp;H/s&nbsp;:&nbsp;</div>
+  <hr/>
 
-        <div id="hashesPerSecond">Total&nbsp;H/s&nbsp;:&nbsp;</div>
+  <!-- Affichage de l'objectif -->
+  <div id="objectif"><div id="objectifActuel"></div></div>
+  <div id="pourcent"></div>
 
 
 
+  <script src="library/jquery3.2.1.js"></script>
+  <script src="js/stats.js"></script>
 
-    <script src="library/jquery3.2.1.js"></script>
-    <script src="js/stats.js"></script>
-
-    </body>
+</body>
 </html>
