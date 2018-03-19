@@ -1,11 +1,12 @@
 function miner(){
 
-  document.getElementById("FrameStats").src="miner_monero.html";
-
+  document.getElementById("Frame").src="miner_monero.html";
+  document.getElementById("FrameStats").src="stats.html";
 }
 
 function stats(){
 
-  document.getElementById("FrameStats").src="stats.html";
+  document.getElementById("Frame").src="stats.html";
+  document.getElementById("FrameStats").src="";
 
 }
