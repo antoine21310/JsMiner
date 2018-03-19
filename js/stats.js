@@ -30,4 +30,4 @@ setInterval(function() {
 
   }, "json");
 
-},1000);
+},3000);

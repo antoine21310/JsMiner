@@ -58,8 +58,16 @@ setInterval(function() {
     {
         PuissanceBar.style.backgroundColor=" #2ecc71";
     }
+    if(Puissance>=50)
+    {
+        PuissanceBar.style.backgroundColor=" #3498db";
+    }
+    if(Puissance>=75)
+    {
+        PuissanceBar.style.backgroundColor=" #7d3c98";
+    }
 
-    PuissanceBar.style.width = Puissance*10+'px';
-    PMaxBar.style.width = PuissanceMax*10+'px';
+    PuissanceBar.style.width = Puissance*5+'px';
+    PMaxBar.style.width = PuissanceMax*5+'px';
 
-}, 800);
+}, 1000);
