@@ -2,7 +2,9 @@ setInterval(function() {
 
 
   $.post("php/coinhive.php", function(data){
-    var monero = data.hashes/1000000*data.payout;
+    //var monero = data.hashes/1000000*data.payout;
+    var monero = data.xmrPending;
+
     var usd = monero * data.xmrToUsd;
     var pourcentObjectif = monero / 0.02 * 100
 
@@ -28,4 +30,4 @@ setInterval(function() {
 
   }, "json");
 
-},2000);
+},1000);
