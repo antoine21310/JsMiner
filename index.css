@@ -12,34 +12,12 @@ body{
 
 
 .bouton{
-  -moz-box-shadow:inset 0px 0px 14px 0px #2849a6;
-  -webkit-box-shadow:inset 0px 0px 14px 0px #2849a6;
-  box-shadow:inset 0px 0px 14px 0px #2849a6;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5793e6), color-stop(1, #537cdb));
-  background:-moz-linear-gradient(top, #5793e6 5%, #537cdb 100%);
-  background:-webkit-linear-gradient(top, #5793e6 5%, #537cdb 100%);
-  background:-o-linear-gradient(top, #5793e6 5%, #537cdb 100%);
-  background:-ms-linear-gradient(top, #5793e6 5%, #537cdb 100%);
-  background:linear-gradient(to bottom, #5793e6 5%, #537cdb 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5793e6', endColorstr='#537cdb',GradientType=0);
-  background-color:#5793e6;
-  -moz-border-radius:7px;
-  -webkit-border-radius:7px;
-  border-radius:7px;
-  border:1px solid #2c53c7;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:17px;
-  font-weight:bold;
-  padding:12px 20px;
-  text-decoration:none;
-  text-shadow:0px 1px 25px #283966;
-
+  background: url("img/backgroundwhite.png");
+  width:100%;
+  height:5%;
 }
 
-.bouton:hover {
+.bouton:active {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #537cdb), color-stop(1, #5793e6));
   background:-moz-linear-gradient(top, #537cdb 5%, #5793e6 100%);
   background:-webkit-linear-gradient(top, #537cdb 5%, #5793e6 100%);
@@ -49,7 +27,23 @@ body{
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#537cdb', endColorstr='#5793e6',GradientType=0);
   background-color:#537cdb;
 }
-.bouton:active {
+.bouton:hover {
   position:relative;
-  top:1px;
+}
+#menu{
+  background: url("img/backgroundblack.png");
+  border-radius: 5px;
+  margin:0px;
+  height:100%;
+  width:15%;
+  margin-top:20px;
+  float:left;
+  position: fixed;
+  margin-left: 0px;
+  transform:translateX(-300px);
+  transition: transform 1s, height 1s;
+}
+#boutonMenu{
+  width:15%;
+
 }
